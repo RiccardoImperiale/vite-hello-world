@@ -1,17 +1,24 @@
 <script>
+import HiVue from './components/HiVue.vue';
+
 export default {
+
   data() {
     return {
       viteMessage: 'Hello Vite!!',
       vueMessage: 'Hi Vue!!'
     }
-  }
+  },
+  components: {
+    HiVue
+  },
 }
 </script>
 
 <template>
   <div class="messages">
     <h2>{{ viteMessage }}</h2>
+    <HiVue />
     <h2>{{ vueMessage }}</h2>
   </div>
 </template>
